@@ -2,7 +2,7 @@ version: "2"
 
 services:
  openplc:
-   image: ioexpert/armv7-openplc
+   image: ioexpert/netpi-openplc
    restart: always
    privileged: true
    network_mode: host
