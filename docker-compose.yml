@@ -2,7 +2,7 @@ version: "2"
 
 services:
  openplc:
-   image: ioexpert/armv6-openplc
+   image: ioexpert/armv7-openplc
    restart: always
    privileged: true
    network_mode: host
@@ -12,14 +12,14 @@ services:
    devices:
      - "/dev/gpiomem:/dev/gpiomem"
  nodered:
-   image: ioexpert/armv6-nodered
+   image: ioexpert/armv7-nodered
    restart: always
    privileged: false
    network_mode: host
    ports:
      - 1880:1880
  dashboard:
-   image: ioexpert/armv6-nodered-dashboard-hdmi
+   image: ioexpert/armv7-nodered-dashboard-hdmi
    restart: always
    privileged: true
    network_mode: host
